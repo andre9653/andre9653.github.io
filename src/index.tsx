@@ -15,7 +15,10 @@ createServer({
         id: 1,
         name: "André",
         lastName: "Bezerra",
-        Stack: "ReactJs",
+        habilites: [],
+        about:
+          "Atualmente resolvi buscar o que me brilha os olhos, que é a tecnologia! Desde então estou fortemente empenhado nessa área, mas especificamente Front-End ReactJS",
+        projects: [],
       },
     ]);
   },

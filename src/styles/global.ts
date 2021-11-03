@@ -11,6 +11,12 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  #root {
+    display: grid;
+    grid-template-areas: "header", "main";
+    grid-template-rows: 15vh 85vh;
+  }
+
   html {
     @media (max-width: 1080px) {
       font-size: 93.75%;
@@ -21,7 +27,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: rgb(32, 40, 51);
+    background: rgb(101,118,142);
+    background: radial-gradient(circle, rgba(101,118,142,1) 0%, rgba(71,90,117,1) 33%, rgba(32,40,51,1) 100%);
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-position: center;
     -webkit-font-smoothing: antialiased;
     font-family: 'Poppins', sans-serif;
   }

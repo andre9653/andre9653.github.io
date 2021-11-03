@@ -2,15 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   color: white;
+  grid-area: "header";
 `;
 
 export const Content = styled.div`
   display: grid;
-  grid-template-areas: "logo" "navbar";
-  align-items: center;
-  justify-content: space-evenly;
+  grid-template-areas: "logo", "navbar";
   max-width: 1120px;
-  padding: 2rem 1rem 10rem;
+  padding: 2rem 1rem;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
 
