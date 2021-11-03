@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
   #root {
     display: grid;
-    grid-template-areas: "header", "main";
+    grid-template-areas: "header" "main";
     grid-template-rows: 15vh 85vh;
   }
 

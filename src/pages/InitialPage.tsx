@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-// eslint-disable-next-line no-use-before-define
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
@@ -18,7 +16,7 @@ export default function InitialPage() {
   return (
     <>
       <Header users={users.users} loading={users.loading} />
-      <Main users={users.users} />
+      <Main users={users.users} loading={users.loading} />
     </>
   );
 }

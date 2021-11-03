@@ -4,7 +4,7 @@ export const Container = styled.main`
   display: flex;
   color: white;
   grid-area: "main";
-  height: 50%;
+  height: 100%;
 `;
 
 export const Content = styled.div`
@@ -12,7 +12,7 @@ export const Content = styled.div`
   grid-template-areas: "about", "picProfile";
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  align-items: start;
+  align-items: center;
   max-width: 1120px;
   margin: 0 auto;
 
@@ -21,13 +21,13 @@ export const Content = styled.div`
     grid-area: "about";
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 20px;
     height: 100%;
   }
 
   .about p {
-    margin-top: -40px;
+    margin-top: 20px;
   }
 
   .picProfile {
@@ -36,6 +36,10 @@ export const Content = styled.div`
     width: 300px;
     height: 300px;
     border-radius: 100%;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
   }
 
   h2 {
