@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable no-use-before-define */
+import React, { useState, useEffect } from "react";
+import { api } from "../../services/api";
 import { Container, Content } from "./style";
 
 interface User {
@@ -11,15 +13,24 @@ interface UserState {
   loading: boolean;
 }
 
-export default function Header({ users, loading }: UserState) {
-  return loading ? (
+export default function Header() {
+  const [users, setUsers] = useState<UserState>({ users: [], loading: true });
+  useEffect(() => {
+    api
+      .get("users")
+      .then((response) =>
+        setUsers({ ...users, users: response.data, loading: false })
+      );
+  }, []);
+
+  return users.loading ? (
     <h1>loading...</h1>
   ) : (
     <Container>
       <Content>
         <div className="name">
           <span className="span">{`</`}</span>
-          {`${users[0].name} ${users[0].lastName}`}
+          {`${users.users[0].name} ${users.users[0].lastName}`}
           <span className="span">{`>`}</span>
         </div>
         <div className="nav-bar">

@@ -2,18 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
+    --background: rgb(255,0,255);
   }
 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-  #root {
-    display: grid;
-    grid-template-areas: "header" "main";
-    grid-template-rows: 15vh 85vh;
   }
 
   html {
@@ -26,11 +21,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: rgb(101,118,142);
-    background: radial-gradient(circle, rgba(101,118,142,1) 0%, rgba(71,90,117,1) 33%, rgba(32,40,51,1) 100%);
-    /* height: 100vh; */
-    background-repeat: no-repeat;
-    background-position: center;
+    background: rgb(32, 40, 51);
     -webkit-font-smoothing: antialiased;
     font-family: 'Poppins', sans-serif;
   }
