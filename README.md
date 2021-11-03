@@ -19,3 +19,19 @@ agora é so iniciar :D
 ```
 npm start
 ```
+
+# Habilidades utilizadas nesse projeto.
+
+- HTML
+- CSS
+- TypeScript
+- ReactJS
+- React Router Dom
+- Axios
+- Styled-Components
+- MirageJs
+
+# Desafios
+
+Um dos maiores desafios é em meio a tantos estudos, e desafios tirar um tempo a dedicar ao mesmo, por ter coisas novas que queria implementar, utilizar o TypeScript entre outras coisas, mas Feliz em estar trabalhando nele.
+
