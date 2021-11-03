@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.header`
   color: white;
   grid-area: "header";
+  background-color: rgba(71, 90, 117, 10%);
 `;
 
 export const Content = styled.div`
@@ -20,7 +21,7 @@ export const Content = styled.div`
   }
 
   a {
-    color: white;
+    color: rgb(93, 225, 217);
     /* margin: 0 2rem; */
     text-decoration: none;
     cursor: pointer;
@@ -39,4 +40,5 @@ export const Content = styled.div`
   .span {
     color: rgb(93, 225, 217);
   }
+
 `;
