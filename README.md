@@ -12,7 +12,7 @@ https://github.com/andre9653/andre9653.github.io.git
 ```
 
 Instale as dependencias: 
-```
+``` 
 npm install
 ```
 agora é so iniciar :D 
