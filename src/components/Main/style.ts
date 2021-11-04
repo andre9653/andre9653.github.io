@@ -28,6 +28,8 @@ export const Content = styled.div`
 
   .about p {
     margin-top: 20px;
+    font-size: 1.2rem;
+
   }
 
   .picProfile {
@@ -40,9 +42,33 @@ export const Content = styled.div`
     color: black;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    img {
+      width: 100%;
+    }
+
+    .link {
+      display: none;
+    }
+  }
+
+  .link-github {
+    align-self: center;
+    margin-top: 10%;
+    width: 50%;
+    padding: 1rem;
+    background-color: rgb(93, 225, 217);
+    border-style: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   h2 {
     color: rgb(93, 225, 217);
+    font-size: 2.2rem;
+    filter: drop-shadow(8px 8px 10px black);
   }
 `;

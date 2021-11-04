@@ -4,6 +4,7 @@ export const Container = styled.header`
   color: white;
   grid-area: "header";
   background-color: rgba(71, 90, 117, 10%);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 export const Content = styled.div`
@@ -40,5 +41,4 @@ export const Content = styled.div`
   .span {
     color: rgb(93, 225, 217);
   }
-
 `;
