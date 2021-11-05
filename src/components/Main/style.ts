@@ -29,7 +29,6 @@ export const Content = styled.div`
   .about p {
     margin-top: 20px;
     font-size: 1.2rem;
-
   }
 
   .picProfile {
@@ -70,5 +69,24 @@ export const Content = styled.div`
     color: rgb(93, 225, 217);
     font-size: 2.2rem;
     filter: drop-shadow(8px 8px 10px black);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-areas: "about";
+    grid-template-columns: 1fr;
+
+    .picProfile {
+      display: none;
+    }
+
+    .about {
+      align-items: center;
+      grid-area: "about";
+      margin-right: 10px;
+    }
+
+    .about p {
+      text-align: center;
+    }
   }
 `;

@@ -19,16 +19,19 @@ export default function Main({ users, loading }: UserState) {
     <h1>loading...</h1>
   ) : (
     <Container>
-      <Content>
+      <Content className="md:container md:mx-auto">
         <section className="about">
           <h2>Desenvolvedor Front-End</h2>
           <p>{users[0].about}</p>
 
-          <button className="link-github" type="button">
+          <button
+            className="link-github transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110"
+            type="button"
+          >
             GitHub
           </button>
         </section>
-        <div className="picProfile">
+        <div className="picProfile transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
           <img
             src={img}
             alt="Tecnologia vetor criado por stories - br.freepik.com"

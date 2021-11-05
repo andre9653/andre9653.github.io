@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
+import MainProjects from "../components/MainProjects";
 import { api } from "../services/api";
 
 export default function InitialPage() {
@@ -17,6 +18,7 @@ export default function InitialPage() {
     <>
       <Header users={users.users} loading={users.loading} />
       <Main users={users.users} loading={users.loading} />
+      <MainProjects />
     </>
   );
 }
