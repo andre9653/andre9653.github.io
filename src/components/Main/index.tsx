@@ -8,27 +8,31 @@ interface User {
   lastName: string;
   age?: number;
   about: string;
+  habilites?: Array<any>;
+  projects?: Array<any>;
+  github?: string;
 }
 interface UserState {
-  users: Array<User>;
-  loading: boolean;
+  user: User;
 }
 
-export default function Main({ users, loading }: UserState) {
-  return loading ? (
-    <h1>loading...</h1>
-  ) : (
+export default function Main({ user }: UserState) {
+  return (
     <Container>
-      <Content>
+      <Content className="md:container md:mx-auto">
         <section className="about">
           <h2>Desenvolvedor Front-End</h2>
-          <p>{users[0].about}</p>
-
-          <button className="link-github" type="button">
-            GitHub
-          </button>
+          <p>{user.about}</p>
+          <a href={user.github} data-testid="link-github">
+            <button
+              className="link-github transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110"
+              type="button"
+            >
+              GitHub
+            </button>
+          </a>
         </section>
-        <div className="picProfile">
+        <div className="picProfile transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
           <img
             src={img}
             alt="Tecnologia vetor criado por stories - br.freepik.com"
