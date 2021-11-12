@@ -5,7 +5,9 @@ import { Container } from "./style";
 export default function MainProjects() {
   return (
     <Container className="md:container md:mx-auto">
-      <h2 className="title-projects">Projects</h2>
+      <h2 className="title-projects" id="page-projects">
+        Projects
+      </h2>
       <div className="container-projects">
         <div>projeto 1</div>
         <div>projeto 2</div>

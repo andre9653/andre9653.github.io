@@ -1,23 +1,25 @@
-import React, { useEffect, useState } from "react";
+// eslint-disable-next-line no-use-before-define
+import React from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import MainProjects from "../components/MainProjects";
-import { api } from "../services/api";
+
+export const user = {
+  name: "André",
+  lastName: "Bezerra",
+  age: 23,
+  habilites: [],
+  about:
+    "Atualmente resolvi buscar o que me brilha os olhos, que é a tecnologia! Desde então estou fortemente empenhado nessa área, mas especificamente Front-End ReactJS",
+  projects: [],
+  github: "https://github.com/andre9653",
+};
 
 export default function InitialPage() {
-  const [users, setUsers] = useState({ users: [], loading: true });
-  useEffect(() => {
-    api
-      .get("users")
-      .then((response) =>
-        setUsers({ ...users, users: response.data, loading: false })
-      );
-  }, []);
-
   return (
     <>
-      <Header users={users.users} loading={users.loading} />
-      <Main users={users.users} loading={users.loading} />
+      <Header user={user} />
+      <Main user={user} />
       <MainProjects />
     </>
   );
