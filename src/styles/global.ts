@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
 
   #root {
     display: grid;
-    grid-template-areas: "header" "main" "main-projects";
-    grid-template-rows: 15vh 85vh 100vh;
+    grid-template-areas: "header" "main" "main-projects" "main-habilites";
+    grid-template-rows: 15vh 85vh 100vh 100vh;
   }
 
   html {
