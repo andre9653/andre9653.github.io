@@ -2,6 +2,7 @@
 import React from "react";
 import { Container, Content } from "./style";
 import img from "./assets/img/3964906.jpg";
+import "animate.css";
 
 interface User {
   name: string;
@@ -20,7 +21,7 @@ export default function Main({ user }: UserState) {
   return (
     <Container>
       <Content className="md:container md:mx-auto">
-        <section className="about">
+        <section className="about animate__animated animate__backInLeft">
           <h2>Desenvolvedor Front-End</h2>
           <p>{user.about}</p>
           <a href={user.github} data-testid="link-github">
@@ -32,7 +33,7 @@ export default function Main({ user }: UserState) {
             </button>
           </a>
         </section>
-        <div className="picProfile transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110">
+        <div className="picProfile transition duration-500 ease-in-out bg-blue-600 hover:bg-red-600 transform hover:-translate-y-1 hover:scale-110 animate__animated animate__backInRight">
           <img
             src={img}
             alt="Tecnologia vetor criado por stories - br.freepik.com"

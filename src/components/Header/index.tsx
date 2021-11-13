@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React from "react";
 import { Container, Content } from "./style";
+import "animate.css";
 
 type Habilites = {
   name: string;
@@ -40,7 +41,10 @@ export default function Header({ user }: UserState) {
   return (
     <Container>
       <Content>
-        <div className="name" data-testid="logo-header">
+        <div
+          className="name animate__animated animate__bounce"
+          data-testid="logo-header"
+        >
           <span className="span">{`</`}</span>
           {`${user.name} ${user.lastName}`}
           <span className="span">{`>`}</span>
