@@ -25,6 +25,10 @@ interface UserState {
   user: User;
 }
 
+const classTailwind = {
+  logo_name: "name animate__animated animate__bounce",
+};
+
 const wordsOfHeader = [
   { name: "Projects", href: "#page-projects" },
   { name: "Habilidades", href: "#page-habilites" },
@@ -41,10 +45,7 @@ export default function Header({ user }: UserState) {
   return (
     <Container>
       <Content>
-        <div
-          className="name animate__animated animate__bounce"
-          data-testid="logo-header"
-        >
+        <div className={classTailwind.logo_name} data-testid="logo-header">
           <span className="span">{`</`}</span>
           {`${user.name} ${user.lastName}`}
           <span className="span">{`>`}</span>

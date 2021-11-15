@@ -2,9 +2,13 @@
 import React from "react";
 import { Container } from "./style";
 
+const classTailwind = {
+  container: "md:container md:mx-auto",
+};
+
 export default function MainProjects() {
   return (
-    <Container className="md:container md:mx-auto">
+    <Container className={classTailwind.container}>
       <h2 className="title-projects" id="page-projects">
         Projects
       </h2>
