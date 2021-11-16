@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import MainProjects from "../components/MainProjects";
+import MainHabilites from "../components/MainHabilites";
 
 export const user = {
   name: "André",
@@ -21,6 +22,7 @@ export default function InitialPage() {
       <Header user={user} />
       <Main user={user} />
       <MainProjects />
+      <MainHabilites />
     </>
   );
 }
