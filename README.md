@@ -13,11 +13,11 @@ https://github.com/andre9653/andre9653.github.io.git
 
 Instale as dependencias: 
 ```
-npm install
+yarn install
 ```
 agora é so iniciar :D 
 ```
-npm start
+yarn start
 ```
 
 # Habilidades utilizadas nesse projeto.
